@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie
+FROM yyolk/buildpack-deps-graphicsmagick:jessie
 
 # gpg keys listed at https://github.com/nodejs/io.js
 RUN gpg --keyserver pool.sks-keyservers.net --recv-keys \
