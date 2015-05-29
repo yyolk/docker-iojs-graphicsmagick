@@ -6,6 +6,7 @@ WORKDIR /usr/src/app
 ONBUILD COPY package.json /usr/src/app/
 ONBUILD RUN npm install
 ONBUILD COPY bower.json /usr/src/app/
+ONBUILD ENV PATH node_modules/.bin:$PATH
 ONBUILD RUN bower install --allow-root
 ONBUILD COPY . /usr/src/app
 
