@@ -1,4 +1,4 @@
-FROM iojs:2.1.0
+FROM yyolk/docker-iojs-graphicsmagick:2.1.0
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
